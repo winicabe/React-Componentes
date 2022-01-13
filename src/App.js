@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
+
+
+function Contador(){
+  console.log(useState())
+  const [contador, setContador] = useState(1);
+  
+  function AddContador(){
+    setContador(contador+1)
+  }
+  return(
+    <div>
+      <h1>{contador}</h1>
+      <button onClick={AddContador}>Adicionar</button>
+    </div>
+  )
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Contador />
     </div>
   );
 }
 
-export default App;
+export default App; 
