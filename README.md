@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-Objetivo do aplicativo é me familiarizar com React e entender a lógica.
+Objetivo do aplicativo é me familiarizar com React e entender sua lógica.
 ## Aprendizados:
 - entendendo a lógica do react. (COMPONENTES)
 - criando um componente.
